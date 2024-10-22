@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pageButton {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) ease;
+}
+
+.pageButton:hover {
+  background-color: var(--secondary-color);
+}
+
+.activePageButton {
+  background-color: #ffcc70;
+  color: var(--text-color);
+}

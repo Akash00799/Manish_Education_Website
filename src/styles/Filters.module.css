@@ -1,0 +1,113 @@
+/* Filters Container */
+.filtersContainer {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.filtersLabel {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dropdownGroup {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dropdownGroup select {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.sortByLabel {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.sortByContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .filtersContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .filtersLabel,
+  .sortByLabel {
+    font-size: 1.3rem;
+  }
+
+  .dropdownGroup,
+  .sortByContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dropdownGroup select,
+  .sortByContainer select {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .filtersContainer {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .filtersLabel,
+  .sortByLabel {
+    font-size: 1.2rem;
+  }
+
+  .dropdownGroup,
+  .sortByContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dropdownGroup select,
+  .sortByContainer select {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .dropdownGroup {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filtersContainer {
+    padding: 2rem;
+  }
+
+  .filtersLabel,
+  .sortByLabel {
+    font-size: 1.6rem;
+  }
+
+  .dropdownGroup select,
+  .sortByContainer select {
+    padding: 0.9rem;
+  }
+}

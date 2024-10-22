@@ -1,0 +1,11 @@
+.Heading {
+  background: url("../assets/Bg2.jpg") 0 0 / cover no-repeat;
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  color: transparent;
+
+  background-clip: text;
+}

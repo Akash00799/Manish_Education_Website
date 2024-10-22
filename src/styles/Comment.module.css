@@ -1,0 +1,82 @@
+.commentItem {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.commentItem p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.commentActions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.commentActions button {
+  background-color: transparent;
+  color: #1e64b1;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.commentActions button.liked {
+  color: #c850c0;
+}
+
+.commentActions button.notLiked {
+  color: #1e64b1;
+}
+
+.commentActions button:hover {
+  color: #1c3f82;
+}
+
+.repliesList {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  border-left: 3px solid #e0e0e0;
+}
+
+.replyItem {
+  background-color: #f0f0f0;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+}
+
+.replyBox {
+  margin-top: 0.5rem;
+}
+
+.replyBox textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.replyBox button {
+  margin-top: 0.5rem;
+  background-color: #1e64b1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.replyBox button:hover {
+  background-color: #c850c0;
+}

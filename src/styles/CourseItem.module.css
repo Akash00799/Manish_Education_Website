@@ -1,0 +1,69 @@
+.courseItem {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform var(--transition-duration) ease,
+    box-shadow var(--transition-duration) ease;
+}
+
+.courseItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.courseImage {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.premiumIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ffcc70;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.discountedPrice {
+  color: #ff6b6b;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ratingValue {
+  margin-left: 0.5rem;
+  color: var(--text-color);
+}
+
+.addToCartButton {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: background-color var(--transition-duration);
+}
+
+.addToCartButton:hover {
+  background-color: var(--secondary-color);
+}

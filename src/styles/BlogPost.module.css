@@ -1,0 +1,111 @@
+.blogPost {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogPost:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.blogImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.seeMoreButton {
+  background-color: #1e64b1;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seeMoreButton:hover {
+  background-color: #c850c0;
+}
+
+.likeSection {
+  margin-top: 1rem;
+}
+
+.likeSection button {
+  background-color: transparent;
+  color: #1e64b1;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.likeSection button.liked {
+  color: #c850c0;
+}
+
+.likeSection button.notLiked {
+  color: #1e64b1;
+}
+
+.likeSection button:hover {
+  color: #ffcc70;
+}
+
+@media (max-width: 768px) {
+  .blogPost {
+    padding: 1rem;
+  }
+
+  .blogImage {
+    height: 180px;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogPost {
+    padding: 1rem;
+  }
+
+  .blogImage {
+    height: 160px;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

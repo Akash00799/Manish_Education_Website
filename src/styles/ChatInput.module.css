@@ -1,0 +1,28 @@
+.chatInputContainer {
+  display: flex;
+  padding: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.chatInput {
+  flex-grow: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.sendButton {
+  background-color: #4158d0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #c850c0;
+}

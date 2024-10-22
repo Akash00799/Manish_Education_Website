@@ -1,0 +1,88 @@
+.chatContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.teacherSection {
+  width: 30%;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #f7f7f7;
+}
+
+.teacherList {
+  margin-top: 1rem;
+}
+
+.teacherList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.teacherItem {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.teacherItem:hover {
+  background-color: #eee;
+}
+
+.chatSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #e5ddd5;
+}
+
+.chatHeader {
+  background-color: #075e54;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.messageList {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.chatInput {
+  display: flex;
+  padding: 1rem;
+  background-color: #f1f1f1;
+}
+
+.chatInput input {
+  flex-grow: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-right: 0.5rem;
+}
+
+.chatInput button {
+  background-color: #075e54;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chatInput button:hover {
+  background-color: #128c7e;
+}
+
+.selectTeacherPrompt {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
