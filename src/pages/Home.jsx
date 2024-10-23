@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CoursesSection from "../components/CoursesSection";
 import {
   FaComments,
@@ -6,11 +6,17 @@ import {
   FaBookOpen,
   FaUsers,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import Chat from "../pages/Chat";
 import { allCourses } from "../data/courses";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false); // State to manage chat open/close
+
+  const toggleChat = () => {
+    setIsChatOpen(!isChatOpen); // Toggle chat visibility
+  };
+
   return (
     <div className={styles.homeContainer}>
       <section className={styles.heroSection}>
@@ -63,11 +69,17 @@ const Home = () => {
         </div>
       </section>
 
-      <Link to="/chat">
-        <div className={styles.chatIcon}>
-          <FaComments size={30} />
+      {/* Chat Icon - toggles chat visibility */}
+      <div className={styles.chatIcon} onClick={toggleChat}>
+        <FaComments size={30} />
+      </div>
+
+      {/* Conditionally render the chat window */}
+      {isChatOpen && (
+        <div className={styles.chatFloatingWindow}>
+          <Chat />
         </div>
-      </Link>
+      )}
     </div>
   );
 };
